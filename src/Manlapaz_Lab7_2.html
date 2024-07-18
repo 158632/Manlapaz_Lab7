@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratory 7</title>
+    </head>
+
+    <body>
+
+        <h4>Kim's simple identifier</h4>
+
+        <input type="number" id="textOne">
+
+
+        <br>
+
+        <button onclick="numberFunction()">Odd or Even</button>
+
+        <br>
+
+        <p>The number is: </p>
+        <p id = "result"></p>
+        
+        <script>
+            function numberFunction() {
+                let x = parseInt(document.getElementById("textOne").value);
+
+                /*if (x==1){
+                    x.innerHTML = x + is a prime number
+                }*/
+
+                //var y = x;
+                /*if (x==1) {
+                    y = x + " is a prime number";
+                }*/ 
+                if (x%2==0) {
+                    y = x + " is an even number";
+                } else {
+                    y = x + " is an odd number";
+                }
+
+
+                //calculations
+                document.getElementById("result").innerHTML = y;
+            }    
+        </script>
+
+    </body>
+</html>

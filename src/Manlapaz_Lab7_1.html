@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laboratory 7</title>
+    </head>
+
+    <body>
+
+        <h4>Kim's simple calculator</h4>
+
+        <input type="number" id="textOne">
+
+        <br> <p></p>
+        
+        <input type="number" id="textTwo">
+
+        <br>
+
+        <button onclick="calculateFunction()">Calculate</button>
+
+        <!--br-->
+
+        <!--<button onclick="numberFunction()">Odd or Even</button>-->
+
+        <br>
+
+        <p>The Total is: </p>
+        <span id = "total"></span>
+        
+        <br>
+
+        <p>The Difference is: </p>
+        <span id = "difference"></span>
+
+        <br>
+
+        <p>The Product is: </p>
+        <span id = "product"></span>
+
+        <br>
+
+        <p>The Quotient is: </p>
+        <span id = "quotient"></span>
+
+        <script>
+            function calculateFunction() {
+                //needed parseInt method to work with addition and subtraction
+                var x = parseInt(document.getElementById("textOne").value);
+                var y = parseInt(document.getElementById("textTwo").value);
+
+                /*total = x + y
+                difference = x - y
+                product = x * y
+                quotient = x / y
+
+                document.write(total)*/
+
+                //calculations
+                document.getElementById("total").innerHTML = x + y;
+                document.getElementById("difference").innerHTML = x - y;
+                document.getElementById("product").innerHTML = x * y;
+                document.getElementById("quotient").innerHTML = x / y;
+            }    
+        </script>
+
+    </body>
+</html>
